@@ -8,8 +8,6 @@ import java.nio.file.StandardCopyOption;
 
 import org.bytedeco.javacpp.Loader;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -55,7 +53,6 @@ public class DataService {
 		else 
 			return "notValid";
 
-		
 	}
 	
 	
@@ -71,11 +68,7 @@ public class DataService {
 		videoWithOutAudioPath = dir + "videoWithOutAudio.mkv";
 		finalVideoFilePath = dir + "video.mkv";
 		
-		System.out.println(videoFilePath + " \n" + 
-				convertMkvFormatFilePath +  " \n\n");
 		
-		// String dir = "src\\main\\resources\\static\\uploadfile"; "C:\\ffmpegPath\\ffmpeg.exe"
-//		 String ffmpeg = Loader.load(org.bytedeco.ffmpeg.ffmpeg.class);  "-y", videoFilePath.substring(videoFilePath.indexOf(".")+1, videoFilePath.length())
 		Files.copy(videoFile.getInputStream(), Paths.get(videoFilePath), StandardCopyOption.REPLACE_EXISTING);
 		Files.copy(audioFile.getInputStream(), Paths.get(audioFilePath), StandardCopyOption.REPLACE_EXISTING);
 		
