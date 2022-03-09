@@ -12,6 +12,8 @@ http://localhost:8080/api/uploaddata
 
 
 Here i use postman for perform the post request that is shown in below.
+![Screenshot (510)](https://user-images.githubusercontent.com/66405570/157432960-5fbf1021-3ef1-46fe-8eee-9aad7bfab1e2.png)
+
 
 
 
