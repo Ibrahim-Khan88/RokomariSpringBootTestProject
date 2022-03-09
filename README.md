@@ -18,6 +18,8 @@ Here i use postman for perform the post request that is shown in below.
 
 
 In response we get a link of the output video file.By using this link on our web browser we can download the video, that is shown in below.
+![Screenshot (511)](https://user-images.githubusercontent.com/66405570/157433191-83cb2157-e411-4727-bbee-fcf301bf9715.png)
+
 
 
 
